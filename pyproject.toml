@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "polistress"
+version = "0.1.0"
+description = "Swarm-based GRC policy simulation engine: persona agents stress-test policy changes across a synthetic organization"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "arananet", email = "info@arananet.net" }]
+keywords = ["grc", "governance", "risk", "compliance", "simulation", "agents", "llm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+]
+dependencies = [
+    "networkx>=3.2",
+    "typer>=0.12",
+    "anthropic>=0.40",
+    "rich>=13.7",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.6",
+]
+
+[project.scripts]
+polistress = "polistress.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/arananet/polistress"
+Repository = "https://github.com/arananet/polistress"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/polistress"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "W"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# typer's public API puts Option()/Argument() calls in parameter defaults.
+"src/polistress/cli.py" = ["B008"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

@@ -19,6 +19,16 @@ Guidelines:
 ## [Unreleased]
 
 ### Added
+- Initial polistress engine (spec: polistress-grc-simulation-engine): four packages under `src/polistress` —
+  `worldgraph` (typed NetworkX knowledge graph with SQLite persistence and neighbors/paths/domain queries),
+  `personas` (persona synthesis with recency-weighted SQLite memory and seven archetypes),
+  `simulation` (discrete tick loop, async Anthropic decisions with model tiering, append-only SQLite event log),
+  and `report` (grounded findings register with framework mappings, CSV export, and event-cited Q&A)
+- `scripts/generate_org.py` — deterministic synthetic org generator (~150 people, 8 teams, 40 assets, 25 controls, 10 findings, 5 policies)
+- `scenarios/ai_usage_policy.yaml` — ready "AI Usage Policy rollout" scenario
+- `polistress` typer CLI: `ingest`, `simulate`, `report`, `ask`
+- `examples/` — example findings register reproducible without an API key
+- pytest suite covering graph, persona synthesis, and event-log integrity (LLM mocked only in tests)
 - Roles section in spec templates (`implementer`, `reviewer`, `qa`, `product_owner`) for per-spec responsibility assignment
 - `roles.default_*` block in `.openspec/config.yaml` and `.openspec/defaults.yaml` for repo-wide default role assignments
 - `scripts/openspec scaffold` now reads `roles.default_*` from config and pre-fills new specs

@@ -92,8 +92,23 @@ shared workflow [evt-00412] ...
 ```
 
 Findings are exported as JSON and CSV (`runs/<run_id>/findings.csv`) for
-import into GRC tooling. An example findings register from a real end-to-end
-run on the synthetic org lives in [`examples/`](examples/).
+import into GRC tooling. An example findings register produced by the full
+pipeline over the synthetic org lives in [`examples/`](examples/) (regenerable
+without an API key — see [`examples/README.md`](examples/README.md) for its
+provenance).
+
+## Agents & models
+
+Agent decisions are made through real Anthropic API calls, tiered by influence:
+
+| Archetype | Model |
+|---|---|
+| ciso, auditor, attacker (high-influence) | `claude-sonnet-4-6` |
+| employee, sysadmin, developer, ai_agent (crowd) | `claude-haiku-4-5-20251001` |
+
+`ANTHROPIC_API_KEY` is read from the environment. Calls are parallelized with
+asyncio under a concurrency cap and retried with exponential backoff. LLM calls
+are mocked **only in tests** — never in runtime code.
 
 ## Contributing
 
