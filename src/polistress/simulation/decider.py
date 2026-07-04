@@ -13,11 +13,10 @@ from __future__ import annotations
 
 import asyncio
 import json
-import os
-import random
 from dataclasses import dataclass, field
 from typing import Protocol, runtime_checkable
 
+from ..llm_client import backoff_sleep
 from .actions import Action
 
 MODEL_HIGH_INFLUENCE = "claude-sonnet-4-6"
@@ -137,16 +136,9 @@ class AnthropicDecider:
         max_retries: int = 4,
         api_key: str | None = None,
     ) -> None:
-        # Imported here so that merely importing the package does not require the
-        # anthropic SDK to be installed until a real run is attempted.
-        from anthropic import AsyncAnthropic
+        from ..llm_client import make_async_client
 
-        key = api_key or os.environ.get("ANTHROPIC_API_KEY")
-        if not key:
-            raise RuntimeError(
-                "ANTHROPIC_API_KEY is not set; the simulation makes real LLM calls"
-            )
-        self._client = AsyncAnthropic(api_key=key, max_retries=2)
+        self._client = make_async_client(max_retries=2, api_key=api_key)
         self._sem = asyncio.Semaphore(max_concurrency)
         self._max_retries = max_retries
 
@@ -178,8 +170,7 @@ class AnthropicDecider:
                     if exc.status_code < 500:
                         raise
                     last_exc = exc
-                delay = min(16.0, 2.0**attempt) + random.uniform(0, 1)
-                await asyncio.sleep(delay)
+                await backoff_sleep(last_exc, attempt)
             raise RuntimeError(
                 f"decision failed after {self._max_retries} retries"
             ) from last_exc

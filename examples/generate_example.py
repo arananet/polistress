@@ -1,37 +1,35 @@
 #!/usr/bin/env python3
-"""Produce the example findings register in ``examples/``.
+"""Produce the example findings register in ``examples/`` using the real API.
 
 This drives the FULL polistress pipeline — ingest → synthesize → simulate →
-report — over the synthetic organization, and writes the resulting findings
-register (JSON + CSV) plus a run summary.
+report — over the synthetic organization, making **real Anthropic API calls**
+for every agent decision and for findings synthesis. No decisions are faked.
 
-Provenance note: a real ``polistress simulate`` run makes live Anthropic API
-calls (``ANTHROPIC_API_KEY`` required). This example script substitutes a
-deterministic, trait-driven *offline decider* and the report agent's
-deterministic (non-LLM) findings path so the artifact is fully reproducible in
-CI and in environments without an API key. The event log, signal extraction,
-framework mappings, and event-id citations are produced by the real pipeline
-code — only the per-agent decision and findings-narration LLM calls are stood
-in for. The offline decider lives here, not in ``src/``: runtime code never
-mocks the LLM.
+Credentials are read from the environment (``ANTHROPIC_API_KEY`` or
+``ANTHROPIC_AUTH_TOKEN``). Because a full 150-person / 30-tick run is thousands
+of calls, this example defaults to a small, representative agent subset and a
+short horizon so it completes quickly and within modest rate limits. Scale it
+up with ``--agents`` / ``--ticks`` (or run ``polistress simulate`` directly).
 
 Run: ``python examples/generate_example.py``
 """
 
 from __future__ import annotations
 
+import argparse
 import asyncio
-import random
+import sys
 from pathlib import Path
 
+from polistress.llm_client import has_credentials
 from polistress.personas import synthesize_agents
-from polistress.personas.agent import Archetype
+from polistress.personas.agent import Agent, Archetype
 from polistress.personas.memory import AgentMemory
 from polistress.report import ReportAgent
+from polistress.report.backend import AnthropicReportBackend
 from polistress.report.findings import write_csv, write_json
 from polistress.simulation import EventLog, SimulationEngine, load_scenario
-from polistress.simulation.actions import Action
-from polistress.simulation.decider import Decision, DecisionContext
+from polistress.simulation.decider import AnthropicDecider
 from polistress.worldgraph import ingest_directory
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -39,106 +37,88 @@ SEED_DIR = ROOT / "data" / "synthetic_org"
 SCENARIO = ROOT / "scenarios" / "ai_usage_policy.yaml"
 OUT = ROOT / "examples"
 
-
-class OfflineDecider:
-    """Deterministic, trait-driven stand-in for the LLM decider (example only)."""
-
-    def __init__(self, seed: int = 0) -> None:
-        self._seed = seed
-
-    async def decide(self, agent, ctx: DecisionContext) -> Decision:
-        rng = random.Random(f"{self._seed}:{agent.id}:{ctx.tick}")
-        target = ctx.reachable_targets[0] if ctx.reachable_targets else None
-        maturity = agent.traits.security_maturity
-        risk = agent.traits.risk_appetite
-        pressure = agent.traits.workload_pressure
-
-        if agent.archetype == Archetype.ATTACKER:
-            return Decision(
-                Action.EXPLOIT_ATTEMPT, target, "probing controls for a data-exfil path"
-            )
-        if agent.archetype == Archetype.AUDITOR:
-            return Decision(
-                Action.REPORT_CONCERN, target, "flagged unreviewed AI copilots"
-            )
-        if agent.archetype == Archetype.CISO:
-            return Decision(Action.ESCALATE, target, "driving review-board rollout")
-        if agent.archetype == Archetype.AI_AGENT:
-            # Copilots keep running until reviewed — canonical shadow-AI pattern.
-            if rng.random() < 0.6:
-                return Decision(
-                    Action.WORKAROUND, target, "kept assisting via unreviewed copilot"
-                )
-            return Decision(Action.IGNORE, target, "continued default behavior")
-        if agent.archetype == Archetype.DEVELOPER:
-            score = risk * 0.5 + pressure * 0.5 - maturity * 0.4
-            if score > 0.35:
-                return Decision(
-                    Action.WORKAROUND, target, "used unapproved AI code assistant to hit deadline"
-                )
-            if rng.random() < 0.25:
-                return Decision(
-                    Action.REQUEST_EXCEPTION, target, "asked to keep current AI tooling"
-                )
-            return Decision(Action.COMPLY, target, "switched to an approved tool")
-        # employees / sysadmins
-        if maturity > 0.7:
-            return Decision(Action.COMPLY, target, "adopted approved tooling")
-        if risk > 0.65 and rng.random() < 0.4:
-            return Decision(Action.WORKAROUND, target, "used a personal AI account")
-        return Decision(Action.COMPLY, target, "following the new policy")
+# A small, archetype-diverse subset so shadow-AI / attacker signals still emerge
+# while keeping the real-call count low. (developer, ai_agent, ciso, auditor,
+# employee, attacker are all represented.)
+_SUBSET = {
+    Archetype.CISO: 1,
+    Archetype.AUDITOR: 1,
+    Archetype.DEVELOPER: 3,
+    Archetype.AI_AGENT: 2,
+    Archetype.EMPLOYEE: 2,
+    Archetype.SYSADMIN: 1,
+}
 
 
-async def main() -> None:
+def _representative_subset(agents: list[Agent]) -> list[Agent]:
+    chosen: list[Agent] = []
+    for archetype, n in _SUBSET.items():
+        chosen.extend([a for a in agents if a.archetype == archetype][:n])
+    chosen.extend(a for a in agents if a.archetype == Archetype.ATTACKER)
+    return chosen
+
+
+async def run(agents_cap: int | None, ticks: int, concurrency: int) -> None:
     graph = ingest_directory(SEED_DIR)
     scenario = load_scenario(SCENARIO)
-    agents = synthesize_agents(graph, seed=0, max_agents=200, n_attackers=3)
+    all_agents = synthesize_agents(graph, seed=0, n_attackers=1)
+    agents = _representative_subset(all_agents)
+    if agents_cap is not None:
+        agents = agents[:agents_cap]
 
-    events_db = OUT / "_run" / "events.db"
-    memory_db = OUT / "_run" / "memory.db"
-    for p in (events_db, memory_db):
+    run_dir = OUT / "_run"
+    run_dir.mkdir(parents=True, exist_ok=True)
+    for name in ("events.db", "memory.db"):
+        p = run_dir / name
         if p.exists():
             p.unlink()
 
-    log = EventLog(events_db)
-    memory = AgentMemory(memory_db)
-    engine = SimulationEngine(graph, agents, log, memory, OfflineDecider(seed=0))
-    ticks = scenario.ticks
+    log = EventLog(run_dir / "events.db")
+    memory = AgentMemory(run_dir / "memory.db")
+    decider = AnthropicDecider(max_concurrency=concurrency, max_retries=8)
+    engine = SimulationEngine(graph, agents, log, memory, decider)
+
+    print(
+        f"Running {len(agents)} agents x {ticks} ticks with REAL API calls "
+        f"(concurrency={concurrency})…",
+        flush=True,
+    )
     await engine.run(scenario, ticks)
 
-    report = ReportAgent(graph, log, backend=_NullBackend(), domain=scenario.domain)
+    backend = AnthropicReportBackend(max_retries=8)
+    report = ReportAgent(graph, log, backend, domain=scenario.domain)
     findings = await report.build_findings()
 
     write_json(findings, OUT / "findings.json")
     write_csv(findings, OUT / "findings.csv")
 
-    counts = log.action_counts()
-    _write_summary(OUT / "run_summary.md", scenario, agents, ticks, counts, findings)
+    question = "where did shadow AI emerge?"
+    answer = await report.answer(question)
 
+    counts = log.action_counts()
+    _write_summary(
+        OUT / "run_summary.md", scenario, agents, ticks, counts, findings, question, answer
+    )
     log.close()
     memory.close()
     print(
-        f"Wrote {len(findings)} findings from {sum(counts.values())} events "
+        f"Wrote {len(findings)} findings from {sum(counts.values())} real events "
         f"({len(agents)} agents x {ticks} ticks) to examples/."
     )
 
 
-class _NullBackend:
-    """Forces the report agent's deterministic (non-LLM) findings path."""
-
-    async def complete(self, system: str, user: str, max_tokens: int = 2000) -> str:
-        return ""
-
-
-def _write_summary(path, scenario, agents, ticks, counts, findings) -> None:
+def _write_summary(path, scenario, agents, ticks, counts, findings, question, answer) -> None:
     lines = [
         f"# Example run summary — {scenario.name}",
         "",
-        "> Generated by `examples/generate_example.py` over the synthetic org.",
-        "> Decisions use a deterministic offline decider (no API key required);",
-        "> a real `polistress simulate` run makes live Anthropic API calls.",
+        "> Generated by `examples/generate_example.py` over the synthetic org,",
+        "> with **real Anthropic API calls** for every agent decision and for",
+        "> findings synthesis. Small scope (few agents, short horizon) so it",
+        "> completes quickly; scale up with `--agents` / `--ticks` or run",
+        "> `polistress simulate` for the full 150-person / 30-tick scenario.",
         "",
-        f"- Agents: **{len(agents)}**",
+        f"- Agents: **{len(agents)}** "
+        + "(" + ", ".join(sorted({a.archetype.value for a in agents})) + ")",
         f"- Ticks: **{ticks}**",
         f"- Total events: **{sum(counts.values())}**",
         "",
@@ -151,12 +131,37 @@ def _write_summary(path, scenario, agents, ticks, counts, findings) -> None:
         lines.append(f"| {action} | {n} |")
     lines += ["", "## Findings", "", "| id | severity | title | citations |", "|---|---|---|---:|"]
     for f in findings:
-        lines.append(
-            f"| {f.id} | {f.severity} | {f.title} | {len(f.root_cause_events)} |"
-        )
-    lines.append("")
+        lines.append(f"| {f.id} | {f.severity} | {f.title} | {len(f.root_cause_events)} |")
+    lines += [
+        "",
+        "## Sample Q&A",
+        "",
+        f"**Q:** {question}",
+        "",
+        f"**A:** {answer.text}",
+        "",
+        "_Cited events: "
+        + (", ".join(f"evt-{i}" for i in answer.cited_event_ids) or "(none)")
+        + "_",
+        "",
+    ]
     Path(path).write_text("\n".join(lines), encoding="utf-8")
 
 
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--agents", type=int, default=None, help="cap on agents (subset)")
+    parser.add_argument("--ticks", type=int, default=2, help="simulated ticks")
+    parser.add_argument("--concurrency", type=int, default=1, help="max concurrent calls")
+    args = parser.parse_args()
+
+    if not has_credentials():
+        sys.exit(
+            "No Anthropic credentials. Set ANTHROPIC_API_KEY or ANTHROPIC_AUTH_TOKEN "
+            "— this example makes real API calls."
+        )
+    asyncio.run(run(args.agents, args.ticks, args.concurrency))
+
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

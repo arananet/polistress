@@ -6,10 +6,9 @@ runtime implementation, :class:`AnthropicReportBackend`, makes real API calls.
 
 from __future__ import annotations
 
-import asyncio
-import os
-import random
 from typing import Protocol, runtime_checkable
+
+from ..llm_client import backoff_sleep
 
 REPORT_MODEL = "claude-sonnet-4-6"
 
@@ -25,14 +24,9 @@ class AnthropicReportBackend:
     """Real Anthropic-backed completion for report generation and Q&A."""
 
     def __init__(self, max_retries: int = 4, api_key: str | None = None) -> None:
-        from anthropic import AsyncAnthropic
+        from ..llm_client import make_async_client
 
-        key = api_key or os.environ.get("ANTHROPIC_API_KEY")
-        if not key:
-            raise RuntimeError(
-                "ANTHROPIC_API_KEY is not set; the report agent makes real LLM calls"
-            )
-        self._client = AsyncAnthropic(api_key=key, max_retries=2)
+        self._client = make_async_client(max_retries=2, api_key=api_key)
         self._max_retries = max_retries
 
     async def complete(self, system: str, user: str, max_tokens: int = 2000) -> str:
@@ -56,7 +50,7 @@ class AnthropicReportBackend:
                 if exc.status_code < 500:
                     raise
                 last_exc = exc
-            await asyncio.sleep(min(16.0, 2.0**attempt) + random.uniform(0, 1))
+            await backoff_sleep(last_exc, attempt)
         raise RuntimeError(
             f"report completion failed after {self._max_retries} retries"
         ) from last_exc
