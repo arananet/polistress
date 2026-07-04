@@ -1,0 +1,362 @@
+[
+  {
+    "id": "POLI-001",
+    "title": "Policy stress: exploit attempt cluster",
+    "description": "90 'exploit_attempt' events across 3 agents touching 1 targets",
+    "severity": "high",
+    "affected_assets": [
+      "control:0001"
+    ],
+    "root_cause_events": [
+      167,
+      168,
+      169,
+      335,
+      336,
+      337,
+      503,
+      504,
+      505,
+      671,
+      672,
+      673,
+      839,
+      840,
+      841,
+      1007,
+      1008,
+      1009,
+      1175,
+      1176,
+      1177,
+      1343,
+      1344,
+      1345,
+      1511
+    ],
+    "domain": "ai_governance",
+    "framework_mappings": {
+      "NIST CSF": [
+        "GV.PO-01",
+        "PR.AA-05"
+      ],
+      "ISO 27001": [
+        "A.5.1",
+        "A.8.16"
+      ],
+      "NIST AI RMF": [
+        "GOVERN-1.1",
+        "MANAGE-2.3"
+      ]
+    },
+    "remediation_plan": [
+      "Review affected controls and exceptions",
+      "Communicate policy intent and approved alternatives",
+      "Add monitoring for the observed circumvention pattern"
+    ],
+    "predicted_residual_risk": "medium"
+  },
+  {
+    "id": "POLI-002",
+    "title": "Policy stress: shadow ai",
+    "description": "1290 workaround/ignore events by AI copilots or developers \u2014 potential shadow-AI adoption",
+    "severity": "high",
+    "affected_assets": [
+      "asset:0005",
+      "asset:0006",
+      "asset:0007",
+      "asset:0011",
+      "asset:0012",
+      "asset:0016",
+      "asset:0018",
+      "asset:0022",
+      "asset:0025"
+    ],
+    "root_cause_events": [
+      21,
+      22,
+      24,
+      27,
+      29,
+      33,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      50,
+      51,
+      52,
+      53,
+      55,
+      57
+    ],
+    "domain": "ai_governance",
+    "framework_mappings": {
+      "NIST CSF": [
+        "GV.PO-01",
+        "PR.AA-05"
+      ],
+      "ISO 27001": [
+        "A.5.1",
+        "A.8.16"
+      ],
+      "NIST AI RMF": [
+        "GOVERN-1.1",
+        "MANAGE-2.3"
+      ]
+    },
+    "remediation_plan": [
+      "Review affected controls and exceptions",
+      "Communicate policy intent and approved alternatives",
+      "Add monitoring for the observed circumvention pattern"
+    ],
+    "predicted_residual_risk": "medium"
+  },
+  {
+    "id": "POLI-003",
+    "title": "Policy stress: workaround cluster",
+    "description": "1118 'workaround' events across 43 agents touching 9 targets",
+    "severity": "medium",
+    "affected_assets": [
+      "asset:0005",
+      "asset:0006",
+      "asset:0007",
+      "asset:0011",
+      "asset:0012",
+      "asset:0016",
+      "asset:0018",
+      "asset:0022",
+      "asset:0025"
+    ],
+    "root_cause_events": [
+      21,
+      22,
+      24,
+      27,
+      29,
+      33,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      50,
+      51,
+      52,
+      53,
+      55,
+      57
+    ],
+    "domain": "ai_governance",
+    "framework_mappings": {
+      "NIST CSF": [
+        "GV.PO-01",
+        "PR.AA-05"
+      ],
+      "ISO 27001": [
+        "A.5.1",
+        "A.8.16"
+      ],
+      "NIST AI RMF": [
+        "GOVERN-1.1",
+        "MANAGE-2.3"
+      ]
+    },
+    "remediation_plan": [
+      "Review affected controls and exceptions",
+      "Communicate policy intent and approved alternatives",
+      "Add monitoring for the observed circumvention pattern"
+    ],
+    "predicted_residual_risk": "medium"
+  },
+  {
+    "id": "POLI-004",
+    "title": "Policy stress: ignore cluster",
+    "description": "172 'ignore' events across 15 agents touching 3 targets",
+    "severity": "medium",
+    "affected_assets": [
+      "asset:0016",
+      "asset:0022",
+      "asset:0025"
+    ],
+    "root_cause_events": [
+      158,
+      160,
+      162,
+      165,
+      166,
+      321,
+      323,
+      326,
+      330,
+      332,
+      488,
+      489,
+      490,
+      495,
+      499,
+      501,
+      656,
+      661,
+      662,
+      664,
+      666,
+      668,
+      824,
+      830,
+      834
+    ],
+    "domain": "ai_governance",
+    "framework_mappings": {
+      "NIST CSF": [
+        "GV.PO-01",
+        "PR.AA-05"
+      ],
+      "ISO 27001": [
+        "A.5.1",
+        "A.8.16"
+      ],
+      "NIST AI RMF": [
+        "GOVERN-1.1",
+        "MANAGE-2.3"
+      ]
+    },
+    "remediation_plan": [
+      "Review affected controls and exceptions",
+      "Communicate policy intent and approved alternatives",
+      "Add monitoring for the observed circumvention pattern"
+    ],
+    "predicted_residual_risk": "medium"
+  },
+  {
+    "id": "POLI-005",
+    "title": "Policy stress: report concern cluster",
+    "description": "90 'report_concern' events across 3 agents touching 1 targets",
+    "severity": "medium",
+    "affected_assets": [
+      "asset:0007"
+    ],
+    "root_cause_events": [
+      4,
+      5,
+      6,
+      172,
+      173,
+      174,
+      340,
+      341,
+      342,
+      508,
+      509,
+      510,
+      676,
+      677,
+      678,
+      844,
+      845,
+      846,
+      1012,
+      1013,
+      1014,
+      1180,
+      1181,
+      1182,
+      1348
+    ],
+    "domain": "ai_governance",
+    "framework_mappings": {
+      "NIST CSF": [
+        "GV.PO-01",
+        "PR.AA-05"
+      ],
+      "ISO 27001": [
+        "A.5.1",
+        "A.8.16"
+      ],
+      "NIST AI RMF": [
+        "GOVERN-1.1",
+        "MANAGE-2.3"
+      ]
+    },
+    "remediation_plan": [
+      "Review affected controls and exceptions",
+      "Communicate policy intent and approved alternatives",
+      "Add monitoring for the observed circumvention pattern"
+    ],
+    "predicted_residual_risk": "medium"
+  },
+  {
+    "id": "POLI-006",
+    "title": "Policy stress: escalate cluster",
+    "description": "60 'escalate' events across 2 agents touching 1 targets",
+    "severity": "medium",
+    "affected_assets": [
+      "asset:0032"
+    ],
+    "root_cause_events": [
+      2,
+      3,
+      170,
+      171,
+      338,
+      339,
+      506,
+      507,
+      674,
+      675,
+      842,
+      843,
+      1010,
+      1011,
+      1178,
+      1179,
+      1346,
+      1347,
+      1514,
+      1515,
+      1682,
+      1683,
+      1850,
+      1851,
+      2018
+    ],
+    "domain": "ai_governance",
+    "framework_mappings": {
+      "NIST CSF": [
+        "GV.PO-01",
+        "PR.AA-05"
+      ],
+      "ISO 27001": [
+        "A.5.1",
+        "A.8.16"
+      ],
+      "NIST AI RMF": [
+        "GOVERN-1.1",
+        "MANAGE-2.3"
+      ]
+    },
+    "remediation_plan": [
+      "Review affected controls and exceptions",
+      "Communicate policy intent and approved alternatives",
+      "Add monitoring for the observed circumvention pattern"
+    ],
+    "predicted_residual_risk": "medium"
+  }
+]

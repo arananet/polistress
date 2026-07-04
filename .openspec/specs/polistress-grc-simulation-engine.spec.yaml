@@ -1,0 +1,75 @@
+# Feature Spec — polistress GRC simulation engine
+
+title: "polistress grc simulation engine"
+slug: "polistress-grc-simulation-engine"
+type: feature
+status: review
+
+author: "Claude"
+created_at: "2026-07-04"
+updated_at: "2026-07-04"
+# Implemented: worldgraph, personas, simulation, and report packages under
+# src/polistress, with the typer CLI, synthetic-org generator, pytest suite,
+# and an example findings register in examples/.
+
+roles:
+  implementer: "@arananet"
+  reviewer: "@arananet"
+  qa: "@arananet"
+  product_owner: "@arananet"
+
+description: |
+  Build polistress, a swarm-based GRC policy simulation engine. Seed documents
+  describing an organization (policies, org chart, asset inventory, historical
+  findings) are ingested into a typed knowledge graph. Persona agents are
+  synthesized from graph nodes, a policy change is injected, and agents
+  interact over discrete simulation ticks with decisions made via real
+  Anthropic API calls. A report agent reads the append-only event log and
+  emits a structured findings register (with NIST CSF / ISO 27001 / NIST AI
+  RMF mappings, event citations, and remediation plans) plus an interactive
+  Q&A CLI. This lets GRC teams stress-test a policy change against a
+  realistic organization before rolling it out for real.
+
+acceptance_criteria:
+  - "Given a directory of seed documents (markdown/JSON), when `polistress ingest <dir>` runs, then a typed knowledge graph (node types Person/Team/Asset/Control/Policy/Finding/AIAgent; edge types reports_to/owns/governed_by/depends_on/has_exception/mitigates) is built with NetworkX and persisted to SQLite, and the query API answers neighbors, paths between nodes, and domain subgraph extraction (cyber, ai_governance)."
+  - "Given an ingested graph, when persona synthesis runs, then each agent has role, security_maturity (0-1), risk_appetite, workload_pressure, goals, and a recency-weighted memory persisted to SQLite; archetypes employee, sysadmin, developer, ciso, auditor, attacker, and ai_agent are supported, and attacker agents carry objectives (data exfil, privilege escalation) and probe controls each tick."
+  - "Given a scenario file with a PolicyInjection, when `polistress simulate --scenario <file> --ticks N` runs with ANTHROPIC_API_KEY set, then agents observe events via graph adjacency, decide actions via real Anthropic API calls (claude-sonnet-4-6 for ciso/auditor/attacker, claude-haiku-4-5-20251001 for crowd agents; asyncio with capped concurrency and retry with backoff), and every action (comply, workaround, request_exception, escalate, exploit_attempt, report_concern, ignore) is appended to an SQLite event log with tick, agent_id, action, target, rationale."
+  - "Given a completed run, when `polistress report --run <run_id>` runs, then a findings register is emitted as JSON ({id, title, description, severity, affected_assets, root_cause_events, domain, framework_mappings, remediation_plan, predicted_residual_risk}) and as CSV for GRC import, and `polistress ask --run <run_id> <question>` answers questions citing specific event ids."
+  - "Given a seed value, when `python scripts/generate_org.py --seed S` runs, then it deterministically writes a synthetic org (~150 people, 8 teams, 40 assets, 25 controls, 10 historical findings, 5 policies) to data/synthetic_org/, clearly labeled synthetic, and a ready 'AI Usage Policy rollout' scenario file exists."
+  - "Runtime code contains no mocks, stubs, or fake data paths; the full pipeline (generate → ingest → simulate → report) runs end to end on the synthetic org and the resulting findings register is committed under examples/."
+
+test_plan:
+  - "Unit tests (worldgraph): ingesting synthetic seed docs builds the expected node/edge types; neighbors/paths/domain-subgraph queries return correct results; graph round-trips through SQLite persistence."
+  - "Unit tests (personas): synthesis from graph nodes yields agents with all required traits in range; archetype assignment (incl. attacker objectives, ai_agent principal) is correct; memory persists to SQLite and recency weighting orders events correctly."
+  - "Unit tests (simulation): event log is append-only (no update/delete), rows carry tick/agent_id/action/target/rationale, and PolicyInjection seeds tick 0; LLM client is mocked ONLY in tests via dependency injection — runtime code paths always call the real Anthropic API."
+  - "Unit tests (report): findings register serializes to the required JSON schema and CSV export; Q&A answers include event-id citations (LLM mocked in tests)."
+  - "Integration test: generate_org.py with a fixed seed is deterministic (two runs produce identical output), and ingest over its output builds a complete graph."
+
+qa_notes: |
+  Full end-to-end run (real Anthropic API calls) exercised manually before
+  merge: generate → ingest → simulate (AI Usage Policy rollout, 30 ticks) →
+  report → ask. Resulting findings register committed to examples/.
+
+out_of_scope:
+  - "Web UI or dashboard (CLI only)."
+  - "Real organizational data ingestion connectors (HRIS, CMDB, GRC tools) — seed docs are files on disk."
+  - "Multi-run comparison / statistical aggregation across simulations."
+  - "Non-Anthropic model providers."
+
+implementation_skill: null
+
+eval_plan:
+  scenarios: []
+  metrics:
+    - groundedness   # report answers must cite real event ids from the log
+
+technical_notes: |
+  Python 3.11+, src layout under src/polistress with four packages:
+  worldgraph/, personas/, simulation/, report/. NetworkX for the graph,
+  SQLite (stdlib sqlite3) for persistence, typer CLI, anthropic SDK with
+  asyncio concurrency cap + exponential backoff. Apache-2.0. Concept only
+  from MiroFish/OASIS — no code copied.
+
+linked_issues: []
+
+linked_prs: []

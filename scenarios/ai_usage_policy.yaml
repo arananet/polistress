@@ -1,0 +1,22 @@
+name: AI Usage Policy rollout
+domain: ai_governance
+ticks: 30
+policy_node_id: policy:ai_usage
+policy_title: AI Usage Policy — restrict unapproved AI tools
+policy_body: >
+  Effective immediately, employees may only use AI tools (chatbots, code
+  assistants, agents) that appear on the approved-software allowlist. Feeding
+  confidential or restricted data into unapproved external AI services is
+  prohibited. Existing AI copilots must be re-reviewed by the AI tool review
+  board within 30 days; unreviewed copilots must be paused. Requests for
+  exceptions go through the CISO's office. Circumventing the allowlist (for
+  example, using personal accounts or unmanaged endpoints) is a policy
+  violation.
+metadata:
+  framework_focus:
+    - NIST AI RMF
+    - NIST CSF
+    - ISO 27001
+  note: >
+    Synthetic scenario. Injected against the synthetic organization produced by
+    scripts/generate_org.py.

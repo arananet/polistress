@@ -183,3 +183,8 @@ terraform.rc
 # ─── OpenSpec local state ──────────────────────────────────────────────────
 .openspec/.cache/
 .openspec/local.yaml
+
+# polistress runtime artifacts
+/runs/
+/examples/_run/
+*.db

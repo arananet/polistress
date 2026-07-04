@@ -1,0 +1,431 @@
+{
+  "edges": [
+    {
+      "source": "control:0001",
+      "target": "asset:0034",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0001",
+      "target": "asset:0029",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0002",
+      "target": "asset:0012",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0002",
+      "target": "asset:0038",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0003",
+      "target": "asset:0032",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0003",
+      "target": "asset:0006",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0004",
+      "target": "asset:0023",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0004",
+      "target": "asset:0027",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0005",
+      "target": "asset:0021",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0005",
+      "target": "asset:0007",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0006",
+      "target": "asset:0022",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0007",
+      "target": "asset:0032",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0007",
+      "target": "asset:0019",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0008",
+      "target": "asset:0026",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0008",
+      "target": "asset:0036",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0008",
+      "target": "asset:0003",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0009",
+      "target": "asset:0006",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0009",
+      "target": "asset:0021",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0010",
+      "target": "asset:0021",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0010",
+      "target": "asset:0008",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0011",
+      "target": "asset:0033",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0011",
+      "target": "asset:0001",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0012",
+      "target": "asset:0035",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0012",
+      "target": "asset:0030",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0012",
+      "target": "asset:0027",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0013",
+      "target": "asset:0013",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0014",
+      "target": "asset:0024",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0014",
+      "target": "asset:0040",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0014",
+      "target": "asset:0032",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0015",
+      "target": "asset:0029",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0015",
+      "target": "asset:0004",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0015",
+      "target": "asset:0014",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0016",
+      "target": "asset:0036",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0016",
+      "target": "asset:0009",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0017",
+      "target": "asset:0029",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0017",
+      "target": "asset:0032",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0018",
+      "target": "asset:0002",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0019",
+      "target": "asset:0039",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0019",
+      "target": "asset:0016",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0019",
+      "target": "asset:0011",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0020",
+      "target": "asset:0036",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0020",
+      "target": "asset:0001",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0021",
+      "target": "asset:0027",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0021",
+      "target": "asset:0006",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0021",
+      "target": "asset:0015",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0022",
+      "target": "asset:0030",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0023",
+      "target": "asset:0010",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0024",
+      "target": "asset:0019",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0024",
+      "target": "asset:0033",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0025",
+      "target": "asset:0018",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0025",
+      "target": "asset:0027",
+      "type": "mitigates"
+    },
+    {
+      "source": "control:0025",
+      "target": "asset:0031",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0031",
+      "target": "control:0024",
+      "type": "has_exception"
+    },
+    {
+      "source": "asset:0016",
+      "target": "control:0005",
+      "type": "has_exception"
+    },
+    {
+      "source": "asset:0030",
+      "target": "control:0003",
+      "type": "has_exception"
+    },
+    {
+      "source": "asset:0036",
+      "target": "control:0009",
+      "type": "has_exception"
+    },
+    {
+      "source": "asset:0010",
+      "target": "control:0025",
+      "type": "has_exception"
+    },
+    {
+      "source": "asset:0025",
+      "target": "control:0014",
+      "type": "has_exception"
+    },
+    {
+      "source": "asset:0013",
+      "target": "control:0011",
+      "type": "has_exception"
+    },
+    {
+      "source": "asset:0033",
+      "target": "control:0017",
+      "type": "has_exception"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "control:0001",
+      "name": "MFA enforcement",
+      "type": "Control"
+    },
+    {
+      "id": "control:0002",
+      "name": "Least-privilege access review",
+      "type": "Control"
+    },
+    {
+      "id": "control:0003",
+      "name": "Endpoint hardening",
+      "type": "Control"
+    },
+    {
+      "id": "control:0004",
+      "name": "Data loss prevention",
+      "type": "Control"
+    },
+    {
+      "id": "control:0005",
+      "name": "Secrets scanning",
+      "type": "Control"
+    },
+    {
+      "id": "control:0006",
+      "name": "Change management approval",
+      "type": "Control"
+    },
+    {
+      "id": "control:0007",
+      "name": "Vendor security review",
+      "type": "Control"
+    },
+    {
+      "id": "control:0008",
+      "name": "Logging and monitoring",
+      "type": "Control"
+    },
+    {
+      "id": "control:0009",
+      "name": "Network segmentation",
+      "type": "Control"
+    },
+    {
+      "id": "control:0010",
+      "name": "Backup and recovery",
+      "type": "Control"
+    },
+    {
+      "id": "control:0011",
+      "name": "Encryption at rest",
+      "type": "Control"
+    },
+    {
+      "id": "control:0012",
+      "name": "Encryption in transit",
+      "type": "Control"
+    },
+    {
+      "id": "control:0013",
+      "name": "Access recertification",
+      "type": "Control"
+    },
+    {
+      "id": "control:0014",
+      "name": "Vulnerability scanning",
+      "type": "Control"
+    },
+    {
+      "id": "control:0015",
+      "name": "Patch management",
+      "type": "Control"
+    },
+    {
+      "id": "control:0016",
+      "name": "Incident response runbook",
+      "type": "Control"
+    },
+    {
+      "id": "control:0017",
+      "name": "Security awareness training",
+      "type": "Control"
+    },
+    {
+      "id": "control:0018",
+      "name": "Code review gate",
+      "type": "Control"
+    },
+    {
+      "id": "control:0019",
+      "name": "Approved-software allowlist",
+      "type": "Control"
+    },
+    {
+      "id": "control:0020",
+      "name": "AI tool review board",
+      "type": "Control"
+    },
+    {
+      "id": "control:0021",
+      "name": "Prompt-injection filter",
+      "type": "Control"
+    },
+    {
+      "id": "control:0022",
+      "name": "Model output logging",
+      "type": "Control"
+    },
+    {
+      "id": "control:0023",
+      "name": "PII redaction",
+      "type": "Control"
+    },
+    {
+      "id": "control:0024",
+      "name": "Egress filtering",
+      "type": "Control"
+    },
+    {
+      "id": "control:0025",
+      "name": "Phishing simulation",
+      "type": "Control"
+    }
+  ]
+}

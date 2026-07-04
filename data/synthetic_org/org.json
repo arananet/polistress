@@ -1,0 +1,2186 @@
+{
+  "edges": [
+    {
+      "source": "person:0002",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0003",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0004",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0005",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0006",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0008",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0009",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0010",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0011",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0012",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0013",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0014",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0015",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0016",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0017",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0018",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0019",
+      "target": "person:0007",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0021",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0022",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0023",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0024",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0025",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0026",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0027",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0028",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0029",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0030",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0031",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0032",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0033",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0034",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0035",
+      "target": "person:0020",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0037",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0038",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0039",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0040",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0041",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0042",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0043",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0044",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0045",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0046",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0047",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0048",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0049",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0050",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0051",
+      "target": "person:0036",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0053",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0054",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0055",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0056",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0057",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0058",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0059",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0060",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0061",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0062",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0063",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0064",
+      "target": "person:0052",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0066",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0067",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0068",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0069",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0070",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0071",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0072",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0073",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0074",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0075",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0076",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0077",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0078",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0079",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0080",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0081",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0082",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0083",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0084",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0085",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0086",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0087",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0088",
+      "target": "person:0065",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0090",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0091",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0092",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0093",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0094",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0095",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0096",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0097",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0098",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0099",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0100",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0101",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0102",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0103",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0104",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0105",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0106",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0107",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0108",
+      "target": "person:0089",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0110",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0111",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0112",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0113",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0114",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0115",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0116",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0117",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0118",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0119",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0120",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0121",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0122",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0123",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0124",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0125",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0126",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0127",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0128",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0129",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0130",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0131",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0132",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0133",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0134",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0135",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0136",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0137",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0138",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0139",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0140",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0141",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0142",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0143",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0144",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0145",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0146",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0147",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0148",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0149",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0150",
+      "target": "person:0109",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0007",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0020",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0036",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0052",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0065",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0089",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0109",
+      "target": "person:0001",
+      "type": "reports_to"
+    },
+    {
+      "source": "person:0104",
+      "target": "ai:0001",
+      "type": "owns"
+    },
+    {
+      "source": "person:0131",
+      "target": "ai:0002",
+      "type": "owns"
+    },
+    {
+      "source": "person:0077",
+      "target": "ai:0003",
+      "type": "owns"
+    },
+    {
+      "source": "person:0043",
+      "target": "ai:0004",
+      "type": "owns"
+    },
+    {
+      "source": "person:0040",
+      "target": "ai:0005",
+      "type": "owns"
+    },
+    {
+      "source": "person:0084",
+      "target": "ai:0006",
+      "type": "owns"
+    },
+    {
+      "source": "person:0034",
+      "target": "ai:0007",
+      "type": "owns"
+    },
+    {
+      "source": "person:0092",
+      "target": "ai:0008",
+      "type": "owns"
+    },
+    {
+      "source": "person:0107",
+      "target": "ai:0009",
+      "type": "owns"
+    },
+    {
+      "source": "person:0135",
+      "target": "ai:0010",
+      "type": "owns"
+    },
+    {
+      "source": "person:0119",
+      "target": "ai:0011",
+      "type": "owns"
+    },
+    {
+      "source": "person:0150",
+      "target": "ai:0012",
+      "type": "owns"
+    },
+    {
+      "source": "person:0083",
+      "target": "ai:0013",
+      "type": "owns"
+    },
+    {
+      "source": "person:0021",
+      "target": "ai:0014",
+      "type": "owns"
+    },
+    {
+      "source": "person:0070",
+      "target": "ai:0015",
+      "type": "owns"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "team:exec",
+      "name": "Executive",
+      "type": "Team"
+    },
+    {
+      "id": "team:security",
+      "name": "Security",
+      "type": "Team"
+    },
+    {
+      "id": "team:platform_eng",
+      "name": "Platform Engineering",
+      "type": "Team"
+    },
+    {
+      "id": "team:growth_eng",
+      "name": "Growth Engineering",
+      "type": "Team"
+    },
+    {
+      "id": "team:data_platform",
+      "name": "Data Platform",
+      "type": "Team"
+    },
+    {
+      "id": "team:sales",
+      "name": "Sales",
+      "type": "Team"
+    },
+    {
+      "id": "team:finance",
+      "name": "Finance",
+      "type": "Team"
+    },
+    {
+      "id": "team:people_ops",
+      "name": "People Ops",
+      "type": "Team"
+    },
+    {
+      "archetype": "ciso",
+      "id": "person:0001",
+      "name": "Blake Kim",
+      "role": "Chief Information Security Officer",
+      "team": "team:exec",
+      "type": "Person"
+    },
+    {
+      "archetype": "ciso",
+      "id": "person:0002",
+      "name": "Sawyer Santos",
+      "role": "Chief Information Security Officer",
+      "team": "team:exec",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0003",
+      "name": "Jordan Larsen",
+      "role": "Executive",
+      "team": "team:exec",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0004",
+      "name": "Cameron Patel",
+      "role": "Executive",
+      "team": "team:exec",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0005",
+      "name": "Alex Garcia",
+      "role": "Executive",
+      "team": "team:exec",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0006",
+      "name": "Riley Rossi",
+      "role": "Executive",
+      "team": "team:exec",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0007",
+      "name": "Kendall Yamamoto",
+      "role": "Security Analyst",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0008",
+      "name": "Devon Novak",
+      "role": "Security Analyst",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "auditor",
+      "id": "person:0009",
+      "name": "Morgan Haddad",
+      "role": "Security Auditor",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0010",
+      "name": "Devon Kim",
+      "role": "Security Analyst",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0011",
+      "name": "Jordan Ivanov",
+      "role": "Security Engineer",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0012",
+      "name": "Taylor Mensah",
+      "role": "Security Analyst",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0013",
+      "name": "Reese Petrov",
+      "role": "Security Engineer",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0014",
+      "name": "Avery Patel",
+      "role": "Security Engineer",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0015",
+      "name": "Blake Dubois",
+      "role": "Security Analyst",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0016",
+      "name": "Finley Kim",
+      "role": "Security Analyst",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0017",
+      "name": "Skyler Garcia",
+      "role": "Security Engineer",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "auditor",
+      "id": "person:0018",
+      "name": "Finley Andersson",
+      "role": "Security Auditor",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "auditor",
+      "id": "person:0019",
+      "name": "Parker Petrov",
+      "role": "Security Auditor",
+      "team": "team:security",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0020",
+      "name": "Reese Silva",
+      "role": "Platform Developer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0021",
+      "name": "Reese Mensah",
+      "role": "Platform Developer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0022",
+      "name": "Riley Novak",
+      "role": "Site Reliability Engineer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0023",
+      "name": "Kendall Garcia",
+      "role": "Platform Developer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0024",
+      "name": "Hayden Silva",
+      "role": "Site Reliability Engineer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0025",
+      "name": "Finley Rossi",
+      "role": "Site Reliability Engineer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0026",
+      "name": "Casey Dubois",
+      "role": "Platform Developer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0027",
+      "name": "Skyler Novak",
+      "role": "Site Reliability Engineer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0028",
+      "name": "Parker Santos",
+      "role": "Platform Developer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0029",
+      "name": "Jamie Costa",
+      "role": "Site Reliability Engineer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0030",
+      "name": "Sam Rossi",
+      "role": "Site Reliability Engineer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0031",
+      "name": "Sam Costa",
+      "role": "Site Reliability Engineer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0032",
+      "name": "Skyler Novak",
+      "role": "Platform Developer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0033",
+      "name": "Jordan Haddad",
+      "role": "Platform Developer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0034",
+      "name": "Dakota Costa",
+      "role": "Platform Developer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0035",
+      "name": "Riley Fischer",
+      "role": "Platform Developer",
+      "team": "team:platform_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0036",
+      "name": "Reese Rossi",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0037",
+      "name": "Morgan Moreau",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0038",
+      "name": "Emerson Garcia",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0039",
+      "name": "Sam Kim",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0040",
+      "name": "Morgan Silva",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0041",
+      "name": "Sawyer Yamamoto",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0042",
+      "name": "Hayden Garcia",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0043",
+      "name": "Skyler Ivanov",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0044",
+      "name": "Hayden Dubois",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0045",
+      "name": "Harper Novak",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0046",
+      "name": "Finley Nguyen",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0047",
+      "name": "Sawyer Kim",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0048",
+      "name": "Sawyer Santos",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0049",
+      "name": "Avery Costa",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0050",
+      "name": "Taylor Andersson",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0051",
+      "name": "Cameron Silva",
+      "role": "Growth Developer",
+      "team": "team:growth_eng",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0052",
+      "name": "Morgan Mensah",
+      "role": "Data Engineer",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0053",
+      "name": "Casey Santos",
+      "role": "Data Engineer",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0054",
+      "name": "Harper Nguyen",
+      "role": "Data Engineer",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0055",
+      "name": "Hayden Costa",
+      "role": "Data Platform Administrator",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0056",
+      "name": "Emerson Nguyen",
+      "role": "Data Engineer",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0057",
+      "name": "Taylor Mensah",
+      "role": "Data Platform Administrator",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0058",
+      "name": "Quinn Rossi",
+      "role": "Data Engineer",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0059",
+      "name": "Sam Rossi",
+      "role": "Data Platform Administrator",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0060",
+      "name": "Dakota Garcia",
+      "role": "Data Engineer",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0061",
+      "name": "Jordan Fischer",
+      "role": "Data Platform Administrator",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0062",
+      "name": "Jordan Santos",
+      "role": "Data Platform Administrator",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "sysadmin",
+      "id": "person:0063",
+      "name": "Morgan Okafor",
+      "role": "Data Platform Administrator",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "developer",
+      "id": "person:0064",
+      "name": "Sawyer Fischer",
+      "role": "Data Engineer",
+      "team": "team:data_platform",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0065",
+      "name": "Jamie Garcia",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0066",
+      "name": "Devon Nguyen",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0067",
+      "name": "Dakota Santos",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0068",
+      "name": "Jamie Larsen",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0069",
+      "name": "Jamie Nguyen",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0070",
+      "name": "Jordan Patel",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0071",
+      "name": "Jamie Garcia",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0072",
+      "name": "Sam Costa",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0073",
+      "name": "Jordan Moreau",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0074",
+      "name": "Jamie Novak",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0075",
+      "name": "Sawyer Fischer",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0076",
+      "name": "Riley Santos",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0077",
+      "name": "Morgan Larsen",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0078",
+      "name": "Dakota Fischer",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0079",
+      "name": "Jamie Fischer",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0080",
+      "name": "Cameron Haddad",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0081",
+      "name": "Taylor Kim",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0082",
+      "name": "Sawyer Yamamoto",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0083",
+      "name": "Reese Yamamoto",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0084",
+      "name": "Cameron Dubois",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0085",
+      "name": "Blake Patel",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0086",
+      "name": "Sawyer Kim",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0087",
+      "name": "Sam Ivanov",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0088",
+      "name": "Blake Costa",
+      "role": "Account Executive",
+      "team": "team:sales",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0089",
+      "name": "Jamie Silva",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0090",
+      "name": "Cameron Fischer",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0091",
+      "name": "Emerson Haddad",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0092",
+      "name": "Skyler Patel",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0093",
+      "name": "Casey Ivanov",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0094",
+      "name": "Alex Ivanov",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0095",
+      "name": "Avery Dubois",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0096",
+      "name": "Quinn Yamamoto",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0097",
+      "name": "Kendall Santos",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0098",
+      "name": "Sawyer Fischer",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0099",
+      "name": "Morgan Haddad",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0100",
+      "name": "Quinn Haddad",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0101",
+      "name": "Sam Larsen",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0102",
+      "name": "Blake Santos",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0103",
+      "name": "Sam Costa",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0104",
+      "name": "Sam Patel",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0105",
+      "name": "Dakota Fischer",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0106",
+      "name": "Harper Moreau",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0107",
+      "name": "Casey Patel",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0108",
+      "name": "Harper Garcia",
+      "role": "Finance Analyst",
+      "team": "team:finance",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0109",
+      "name": "Taylor Kim",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0110",
+      "name": "Blake Santos",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0111",
+      "name": "Morgan Novak",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0112",
+      "name": "Quinn Petrov",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0113",
+      "name": "Riley Costa",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0114",
+      "name": "Riley Novak",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0115",
+      "name": "Harper Fischer",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0116",
+      "name": "Avery Patel",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0117",
+      "name": "Jordan Yamamoto",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0118",
+      "name": "Avery Patel",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0119",
+      "name": "Alex Costa",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0120",
+      "name": "Morgan Novak",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0121",
+      "name": "Casey Dubois",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0122",
+      "name": "Finley Yamamoto",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0123",
+      "name": "Finley Nguyen",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0124",
+      "name": "Taylor Garcia",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0125",
+      "name": "Kendall Okafor",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0126",
+      "name": "Finley Patel",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0127",
+      "name": "Reese Larsen",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0128",
+      "name": "Finley Okafor",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0129",
+      "name": "Cameron Okafor",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0130",
+      "name": "Sam Andersson",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0131",
+      "name": "Reese Patel",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0132",
+      "name": "Reese Haddad",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0133",
+      "name": "Sawyer Rossi",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0134",
+      "name": "Sawyer Kim",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0135",
+      "name": "Reese Santos",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0136",
+      "name": "Cameron Petrov",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0137",
+      "name": "Blake Okafor",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0138",
+      "name": "Jamie Silva",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0139",
+      "name": "Casey Yamamoto",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0140",
+      "name": "Alex Silva",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0141",
+      "name": "Blake Costa",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0142",
+      "name": "Cameron Rossi",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0143",
+      "name": "Avery Silva",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0144",
+      "name": "Kendall Kim",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0145",
+      "name": "Skyler Patel",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0146",
+      "name": "Emerson Rossi",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0147",
+      "name": "Riley Dubois",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0148",
+      "name": "Reese Andersson",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0149",
+      "name": "Jamie Rossi",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "archetype": "employee",
+      "id": "person:0150",
+      "name": "Alex Haddad",
+      "role": "People Ops Specialist",
+      "team": "team:people_ops",
+      "type": "Person"
+    },
+    {
+      "id": "ai:0001",
+      "name": "Copilot for Sam Patel",
+      "principal": "person:0104",
+      "role": "AI copilot",
+      "team": "team:finance",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0002",
+      "name": "Copilot for Reese Patel",
+      "principal": "person:0131",
+      "role": "AI copilot",
+      "team": "team:people_ops",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0003",
+      "name": "Copilot for Morgan Larsen",
+      "principal": "person:0077",
+      "role": "AI copilot",
+      "team": "team:sales",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0004",
+      "name": "Copilot for Skyler Ivanov",
+      "principal": "person:0043",
+      "role": "AI copilot",
+      "team": "team:growth_eng",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0005",
+      "name": "Copilot for Morgan Silva",
+      "principal": "person:0040",
+      "role": "AI copilot",
+      "team": "team:growth_eng",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0006",
+      "name": "Copilot for Cameron Dubois",
+      "principal": "person:0084",
+      "role": "AI copilot",
+      "team": "team:sales",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0007",
+      "name": "Copilot for Dakota Costa",
+      "principal": "person:0034",
+      "role": "AI copilot",
+      "team": "team:platform_eng",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0008",
+      "name": "Copilot for Skyler Patel",
+      "principal": "person:0092",
+      "role": "AI copilot",
+      "team": "team:finance",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0009",
+      "name": "Copilot for Casey Patel",
+      "principal": "person:0107",
+      "role": "AI copilot",
+      "team": "team:finance",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0010",
+      "name": "Copilot for Reese Santos",
+      "principal": "person:0135",
+      "role": "AI copilot",
+      "team": "team:people_ops",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0011",
+      "name": "Copilot for Alex Costa",
+      "principal": "person:0119",
+      "role": "AI copilot",
+      "team": "team:people_ops",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0012",
+      "name": "Copilot for Alex Haddad",
+      "principal": "person:0150",
+      "role": "AI copilot",
+      "team": "team:people_ops",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0013",
+      "name": "Copilot for Reese Yamamoto",
+      "principal": "person:0083",
+      "role": "AI copilot",
+      "team": "team:sales",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0014",
+      "name": "Copilot for Reese Mensah",
+      "principal": "person:0021",
+      "role": "AI copilot",
+      "team": "team:platform_eng",
+      "type": "AIAgent"
+    },
+    {
+      "id": "ai:0015",
+      "name": "Copilot for Jordan Patel",
+      "principal": "person:0070",
+      "role": "AI copilot",
+      "team": "team:sales",
+      "type": "AIAgent"
+    }
+  ]
+}

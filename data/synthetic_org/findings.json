@@ -1,0 +1,176 @@
+{
+  "edges": [
+    {
+      "source": "finding:0001",
+      "target": "control:0024",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0018",
+      "target": "finding:0001",
+      "type": "has_exception"
+    },
+    {
+      "source": "finding:0002",
+      "target": "control:0015",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0020",
+      "target": "finding:0002",
+      "type": "has_exception"
+    },
+    {
+      "source": "finding:0003",
+      "target": "control:0011",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0035",
+      "target": "finding:0003",
+      "type": "has_exception"
+    },
+    {
+      "source": "finding:0004",
+      "target": "control:0011",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0036",
+      "target": "finding:0004",
+      "type": "has_exception"
+    },
+    {
+      "source": "finding:0005",
+      "target": "control:0013",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0013",
+      "target": "finding:0005",
+      "type": "has_exception"
+    },
+    {
+      "source": "finding:0006",
+      "target": "control:0011",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0015",
+      "target": "finding:0006",
+      "type": "has_exception"
+    },
+    {
+      "source": "finding:0007",
+      "target": "control:0022",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0031",
+      "target": "finding:0007",
+      "type": "has_exception"
+    },
+    {
+      "source": "finding:0008",
+      "target": "control:0005",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0010",
+      "target": "finding:0008",
+      "type": "has_exception"
+    },
+    {
+      "source": "finding:0009",
+      "target": "control:0015",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0033",
+      "target": "finding:0009",
+      "type": "has_exception"
+    },
+    {
+      "source": "finding:0010",
+      "target": "control:0024",
+      "type": "mitigates"
+    },
+    {
+      "source": "asset:0007",
+      "target": "finding:0010",
+      "type": "has_exception"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "finding:0001",
+      "name": "Historical finding 1",
+      "severity": "critical",
+      "status": "remediated",
+      "type": "Finding"
+    },
+    {
+      "id": "finding:0002",
+      "name": "Historical finding 2",
+      "severity": "low",
+      "status": "open",
+      "type": "Finding"
+    },
+    {
+      "id": "finding:0003",
+      "name": "Historical finding 3",
+      "severity": "low",
+      "status": "remediated",
+      "type": "Finding"
+    },
+    {
+      "id": "finding:0004",
+      "name": "Historical finding 4",
+      "severity": "low",
+      "status": "remediated",
+      "type": "Finding"
+    },
+    {
+      "id": "finding:0005",
+      "name": "Historical finding 5",
+      "severity": "high",
+      "status": "accepted",
+      "type": "Finding"
+    },
+    {
+      "id": "finding:0006",
+      "name": "Historical finding 6",
+      "severity": "low",
+      "status": "open",
+      "type": "Finding"
+    },
+    {
+      "id": "finding:0007",
+      "name": "Historical finding 7",
+      "severity": "low",
+      "status": "remediated",
+      "type": "Finding"
+    },
+    {
+      "id": "finding:0008",
+      "name": "Historical finding 8",
+      "severity": "low",
+      "status": "open",
+      "type": "Finding"
+    },
+    {
+      "id": "finding:0009",
+      "name": "Historical finding 9",
+      "severity": "medium",
+      "status": "open",
+      "type": "Finding"
+    },
+    {
+      "id": "finding:0010",
+      "name": "Historical finding 10",
+      "severity": "low",
+      "status": "open",
+      "type": "Finding"
+    }
+  ]
+}

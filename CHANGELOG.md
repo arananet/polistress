@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `{{PROJECT_NAME}}` will be documented in this file.
+All notable changes to `polistress` will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -19,6 +19,16 @@ Guidelines:
 ## [Unreleased]
 
 ### Added
+- Initial polistress engine (spec: polistress-grc-simulation-engine): four packages under `src/polistress` —
+  `worldgraph` (typed NetworkX knowledge graph with SQLite persistence and neighbors/paths/domain queries),
+  `personas` (persona synthesis with recency-weighted SQLite memory and seven archetypes),
+  `simulation` (discrete tick loop, async Anthropic decisions with model tiering, append-only SQLite event log),
+  and `report` (grounded findings register with framework mappings, CSV export, and event-cited Q&A)
+- `scripts/generate_org.py` — deterministic synthetic org generator (~150 people, 8 teams, 40 assets, 25 controls, 10 findings, 5 policies)
+- `scenarios/ai_usage_policy.yaml` — ready "AI Usage Policy rollout" scenario
+- `polistress` typer CLI: `ingest`, `simulate`, `report`, `ask`
+- `examples/` — example findings register reproducible without an API key
+- pytest suite covering graph, persona synthesis, and event-log integrity (LLM mocked only in tests)
 - Roles section in spec templates (`implementer`, `reviewer`, `qa`, `product_owner`) for per-spec responsibility assignment
 - `roles.default_*` block in `.openspec/config.yaml` and `.openspec/defaults.yaml` for repo-wide default role assignments
 - `scripts/openspec scaffold` now reads `roles.default_*` from config and pre-fills new specs
@@ -61,5 +71,5 @@ Guidelines:
 ### Added
 - Initial release.
 
-[Unreleased]: https://github.com/{{GITHUB_OWNER}}/{{PROJECT_NAME}}/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/{{GITHUB_OWNER}}/{{PROJECT_NAME}}/releases/tag/v0.1.0
+[Unreleased]: https://github.com/arananet/polistress/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/arananet/polistress/releases/tag/v0.1.0

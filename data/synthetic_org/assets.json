@@ -1,0 +1,1176 @@
+{
+  "edges": [
+    {
+      "source": "team:sales",
+      "target": "asset:0001",
+      "type": "owns"
+    },
+    {
+      "source": "person:0130",
+      "target": "asset:0001",
+      "type": "owns"
+    },
+    {
+      "source": "team:people_ops",
+      "target": "asset:0002",
+      "type": "owns"
+    },
+    {
+      "source": "person:0122",
+      "target": "asset:0002",
+      "type": "owns"
+    },
+    {
+      "source": "team:data_platform",
+      "target": "asset:0003",
+      "type": "owns"
+    },
+    {
+      "source": "person:0071",
+      "target": "asset:0003",
+      "type": "owns"
+    },
+    {
+      "source": "team:people_ops",
+      "target": "asset:0004",
+      "type": "owns"
+    },
+    {
+      "source": "person:0071",
+      "target": "asset:0004",
+      "type": "owns"
+    },
+    {
+      "source": "team:security",
+      "target": "asset:0005",
+      "type": "owns"
+    },
+    {
+      "source": "person:0061",
+      "target": "asset:0005",
+      "type": "owns"
+    },
+    {
+      "source": "team:sales",
+      "target": "asset:0006",
+      "type": "owns"
+    },
+    {
+      "source": "person:0139",
+      "target": "asset:0006",
+      "type": "owns"
+    },
+    {
+      "source": "team:platform_eng",
+      "target": "asset:0007",
+      "type": "owns"
+    },
+    {
+      "source": "person:0060",
+      "target": "asset:0007",
+      "type": "owns"
+    },
+    {
+      "source": "team:platform_eng",
+      "target": "asset:0008",
+      "type": "owns"
+    },
+    {
+      "source": "person:0017",
+      "target": "asset:0008",
+      "type": "owns"
+    },
+    {
+      "source": "team:finance",
+      "target": "asset:0009",
+      "type": "owns"
+    },
+    {
+      "source": "person:0139",
+      "target": "asset:0009",
+      "type": "owns"
+    },
+    {
+      "source": "team:finance",
+      "target": "asset:0010",
+      "type": "owns"
+    },
+    {
+      "source": "person:0053",
+      "target": "asset:0010",
+      "type": "owns"
+    },
+    {
+      "source": "team:finance",
+      "target": "asset:0011",
+      "type": "owns"
+    },
+    {
+      "source": "person:0148",
+      "target": "asset:0011",
+      "type": "owns"
+    },
+    {
+      "source": "team:people_ops",
+      "target": "asset:0012",
+      "type": "owns"
+    },
+    {
+      "source": "person:0091",
+      "target": "asset:0012",
+      "type": "owns"
+    },
+    {
+      "source": "team:finance",
+      "target": "asset:0013",
+      "type": "owns"
+    },
+    {
+      "source": "person:0138",
+      "target": "asset:0013",
+      "type": "owns"
+    },
+    {
+      "source": "team:growth_eng",
+      "target": "asset:0014",
+      "type": "owns"
+    },
+    {
+      "source": "person:0057",
+      "target": "asset:0014",
+      "type": "owns"
+    },
+    {
+      "source": "team:finance",
+      "target": "asset:0015",
+      "type": "owns"
+    },
+    {
+      "source": "person:0008",
+      "target": "asset:0015",
+      "type": "owns"
+    },
+    {
+      "source": "team:sales",
+      "target": "asset:0016",
+      "type": "owns"
+    },
+    {
+      "source": "person:0043",
+      "target": "asset:0016",
+      "type": "owns"
+    },
+    {
+      "source": "team:platform_eng",
+      "target": "asset:0017",
+      "type": "owns"
+    },
+    {
+      "source": "person:0101",
+      "target": "asset:0017",
+      "type": "owns"
+    },
+    {
+      "source": "team:exec",
+      "target": "asset:0018",
+      "type": "owns"
+    },
+    {
+      "source": "person:0110",
+      "target": "asset:0018",
+      "type": "owns"
+    },
+    {
+      "source": "team:people_ops",
+      "target": "asset:0019",
+      "type": "owns"
+    },
+    {
+      "source": "person:0013",
+      "target": "asset:0019",
+      "type": "owns"
+    },
+    {
+      "source": "team:finance",
+      "target": "asset:0020",
+      "type": "owns"
+    },
+    {
+      "source": "person:0055",
+      "target": "asset:0020",
+      "type": "owns"
+    },
+    {
+      "source": "team:sales",
+      "target": "asset:0021",
+      "type": "owns"
+    },
+    {
+      "source": "person:0098",
+      "target": "asset:0021",
+      "type": "owns"
+    },
+    {
+      "source": "team:finance",
+      "target": "asset:0022",
+      "type": "owns"
+    },
+    {
+      "source": "person:0021",
+      "target": "asset:0022",
+      "type": "owns"
+    },
+    {
+      "source": "team:exec",
+      "target": "asset:0023",
+      "type": "owns"
+    },
+    {
+      "source": "person:0090",
+      "target": "asset:0023",
+      "type": "owns"
+    },
+    {
+      "source": "team:security",
+      "target": "asset:0024",
+      "type": "owns"
+    },
+    {
+      "source": "person:0008",
+      "target": "asset:0024",
+      "type": "owns"
+    },
+    {
+      "source": "team:growth_eng",
+      "target": "asset:0025",
+      "type": "owns"
+    },
+    {
+      "source": "person:0040",
+      "target": "asset:0025",
+      "type": "owns"
+    },
+    {
+      "source": "team:platform_eng",
+      "target": "asset:0026",
+      "type": "owns"
+    },
+    {
+      "source": "person:0030",
+      "target": "asset:0026",
+      "type": "owns"
+    },
+    {
+      "source": "team:growth_eng",
+      "target": "asset:0027",
+      "type": "owns"
+    },
+    {
+      "source": "person:0066",
+      "target": "asset:0027",
+      "type": "owns"
+    },
+    {
+      "source": "team:platform_eng",
+      "target": "asset:0028",
+      "type": "owns"
+    },
+    {
+      "source": "person:0042",
+      "target": "asset:0028",
+      "type": "owns"
+    },
+    {
+      "source": "team:security",
+      "target": "asset:0029",
+      "type": "owns"
+    },
+    {
+      "source": "person:0080",
+      "target": "asset:0029",
+      "type": "owns"
+    },
+    {
+      "source": "team:finance",
+      "target": "asset:0030",
+      "type": "owns"
+    },
+    {
+      "source": "person:0051",
+      "target": "asset:0030",
+      "type": "owns"
+    },
+    {
+      "source": "team:growth_eng",
+      "target": "asset:0031",
+      "type": "owns"
+    },
+    {
+      "source": "person:0078",
+      "target": "asset:0031",
+      "type": "owns"
+    },
+    {
+      "source": "team:security",
+      "target": "asset:0032",
+      "type": "owns"
+    },
+    {
+      "source": "person:0089",
+      "target": "asset:0032",
+      "type": "owns"
+    },
+    {
+      "source": "team:finance",
+      "target": "asset:0033",
+      "type": "owns"
+    },
+    {
+      "source": "person:0018",
+      "target": "asset:0033",
+      "type": "owns"
+    },
+    {
+      "source": "team:sales",
+      "target": "asset:0034",
+      "type": "owns"
+    },
+    {
+      "source": "person:0108",
+      "target": "asset:0034",
+      "type": "owns"
+    },
+    {
+      "source": "team:security",
+      "target": "asset:0035",
+      "type": "owns"
+    },
+    {
+      "source": "person:0093",
+      "target": "asset:0035",
+      "type": "owns"
+    },
+    {
+      "source": "team:platform_eng",
+      "target": "asset:0036",
+      "type": "owns"
+    },
+    {
+      "source": "person:0046",
+      "target": "asset:0036",
+      "type": "owns"
+    },
+    {
+      "source": "team:data_platform",
+      "target": "asset:0037",
+      "type": "owns"
+    },
+    {
+      "source": "person:0120",
+      "target": "asset:0037",
+      "type": "owns"
+    },
+    {
+      "source": "team:data_platform",
+      "target": "asset:0038",
+      "type": "owns"
+    },
+    {
+      "source": "person:0063",
+      "target": "asset:0038",
+      "type": "owns"
+    },
+    {
+      "source": "team:data_platform",
+      "target": "asset:0039",
+      "type": "owns"
+    },
+    {
+      "source": "person:0063",
+      "target": "asset:0039",
+      "type": "owns"
+    },
+    {
+      "source": "team:finance",
+      "target": "asset:0040",
+      "type": "owns"
+    },
+    {
+      "source": "person:0008",
+      "target": "asset:0040",
+      "type": "owns"
+    },
+    {
+      "source": "asset:0001",
+      "target": "asset:0021",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0003",
+      "target": "asset:0014",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0004",
+      "target": "asset:0017",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0005",
+      "target": "asset:0018",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0006",
+      "target": "asset:0018",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0006",
+      "target": "asset:0036",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0008",
+      "target": "asset:0013",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0008",
+      "target": "asset:0006",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0010",
+      "target": "asset:0027",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0010",
+      "target": "asset:0032",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0011",
+      "target": "asset:0016",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0011",
+      "target": "asset:0031",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0012",
+      "target": "asset:0032",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0012",
+      "target": "asset:0029",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0017",
+      "target": "asset:0038",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0018",
+      "target": "asset:0031",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0019",
+      "target": "asset:0034",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0019",
+      "target": "asset:0023",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0020",
+      "target": "asset:0036",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0021",
+      "target": "asset:0023",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0022",
+      "target": "asset:0030",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0022",
+      "target": "asset:0018",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0023",
+      "target": "asset:0017",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0026",
+      "target": "asset:0013",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0026",
+      "target": "asset:0021",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0028",
+      "target": "asset:0035",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0028",
+      "target": "asset:0012",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0031",
+      "target": "asset:0018",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0032",
+      "target": "asset:0038",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0032",
+      "target": "asset:0034",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0033",
+      "target": "asset:0019",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0033",
+      "target": "asset:0007",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0035",
+      "target": "asset:0015",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0036",
+      "target": "asset:0012",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0037",
+      "target": "asset:0001",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0038",
+      "target": "asset:0035",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0038",
+      "target": "asset:0009",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0039",
+      "target": "asset:0003",
+      "type": "depends_on"
+    },
+    {
+      "source": "asset:0001",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0001",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0002",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0003",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0003",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0004",
+      "target": "policy:data_classification",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0004",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0005",
+      "target": "policy:data_classification",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0006",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0006",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0007",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0007",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0008",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0009",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0010",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0010",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0011",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0012",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0012",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0013",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0013",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0014",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0014",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0015",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0015",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0016",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0017",
+      "target": "policy:data_classification",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0018",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0019",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0020",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0021",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0022",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0022",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0023",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0023",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0024",
+      "target": "policy:data_classification",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0024",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0025",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0026",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0026",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0027",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0027",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0028",
+      "target": "policy:data_classification",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0029",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0030",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0031",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0031",
+      "target": "policy:data_classification",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0032",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0032",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0033",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0033",
+      "target": "policy:data_classification",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0034",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0034",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0035",
+      "target": "policy:vendor_risk",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0036",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0036",
+      "target": "policy:data_classification",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0037",
+      "target": "policy:acceptable_use",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0038",
+      "target": "policy:change_management",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0039",
+      "target": "policy:data_classification",
+      "type": "governed_by"
+    },
+    {
+      "source": "asset:0040",
+      "target": "policy:access_control",
+      "type": "governed_by"
+    }
+  ],
+  "nodes": [
+    {
+      "classification": "restricted",
+      "id": "asset:0001",
+      "kind": "Identity Provider",
+      "name": "Identity Provider 1",
+      "type": "Asset"
+    },
+    {
+      "classification": "internal",
+      "id": "asset:0002",
+      "kind": "CI/CD Pipeline",
+      "name": "CI/CD Pipeline 2",
+      "type": "Asset"
+    },
+    {
+      "classification": "internal",
+      "id": "asset:0003",
+      "kind": "Identity Provider",
+      "name": "Identity Provider 3",
+      "type": "Asset"
+    },
+    {
+      "classification": "internal",
+      "id": "asset:0004",
+      "kind": "File Store",
+      "name": "File Store 4",
+      "type": "Asset"
+    },
+    {
+      "classification": "confidential",
+      "id": "asset:0005",
+      "kind": "Identity Provider",
+      "name": "Identity Provider 5",
+      "type": "Asset"
+    },
+    {
+      "classification": "confidential",
+      "id": "asset:0006",
+      "kind": "Repository",
+      "name": "Repository 6",
+      "type": "Asset"
+    },
+    {
+      "classification": "internal",
+      "id": "asset:0007",
+      "kind": "Internal Service",
+      "name": "Internal Service 7",
+      "type": "Asset"
+    },
+    {
+      "classification": "internal",
+      "id": "asset:0008",
+      "kind": "CI/CD Pipeline",
+      "name": "CI/CD Pipeline 8",
+      "type": "Asset"
+    },
+    {
+      "classification": "confidential",
+      "id": "asset:0009",
+      "kind": "CI/CD Pipeline",
+      "name": "CI/CD Pipeline 9",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0010",
+      "kind": "Identity Provider",
+      "name": "Identity Provider 10",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0011",
+      "kind": "CI/CD Pipeline",
+      "name": "CI/CD Pipeline 11",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0012",
+      "kind": "CI/CD Pipeline",
+      "name": "CI/CD Pipeline 12",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0013",
+      "kind": "Repository",
+      "name": "Repository 13",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0014",
+      "kind": "File Store",
+      "name": "File Store 14",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0015",
+      "kind": "Repository",
+      "name": "Repository 15",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0016",
+      "kind": "CI/CD Pipeline",
+      "name": "CI/CD Pipeline 16",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0017",
+      "kind": "Identity Provider",
+      "name": "Identity Provider 17",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0018",
+      "kind": "Model Endpoint",
+      "name": "Model Endpoint 18",
+      "type": "Asset"
+    },
+    {
+      "classification": "internal",
+      "id": "asset:0019",
+      "kind": "Database",
+      "name": "Database 19",
+      "type": "Asset"
+    },
+    {
+      "classification": "confidential",
+      "id": "asset:0020",
+      "kind": "Repository",
+      "name": "Repository 20",
+      "type": "Asset"
+    },
+    {
+      "classification": "confidential",
+      "id": "asset:0021",
+      "kind": "Identity Provider",
+      "name": "Identity Provider 21",
+      "type": "Asset"
+    },
+    {
+      "classification": "confidential",
+      "id": "asset:0022",
+      "kind": "Repository",
+      "name": "Repository 22",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0023",
+      "kind": "Identity Provider",
+      "name": "Identity Provider 23",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0024",
+      "kind": "Data Warehouse",
+      "name": "Data Warehouse 24",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0025",
+      "kind": "Data Warehouse",
+      "name": "Data Warehouse 25",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0026",
+      "kind": "Data Warehouse",
+      "name": "Data Warehouse 26",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0027",
+      "kind": "Model Endpoint",
+      "name": "Model Endpoint 27",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0028",
+      "kind": "Endpoint Fleet",
+      "name": "Endpoint Fleet 28",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0029",
+      "kind": "Repository",
+      "name": "Repository 29",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0030",
+      "kind": "Model Endpoint",
+      "name": "Model Endpoint 30",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0031",
+      "kind": "Internal Service",
+      "name": "Internal Service 31",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0032",
+      "kind": "Model Endpoint",
+      "name": "Model Endpoint 32",
+      "type": "Asset"
+    },
+    {
+      "classification": "confidential",
+      "id": "asset:0033",
+      "kind": "File Store",
+      "name": "File Store 33",
+      "type": "Asset"
+    },
+    {
+      "classification": "public",
+      "id": "asset:0034",
+      "kind": "File Store",
+      "name": "File Store 34",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0035",
+      "kind": "Identity Provider",
+      "name": "Identity Provider 35",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0036",
+      "kind": "Identity Provider",
+      "name": "Identity Provider 36",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0037",
+      "kind": "File Store",
+      "name": "File Store 37",
+      "type": "Asset"
+    },
+    {
+      "classification": "confidential",
+      "id": "asset:0038",
+      "kind": "CI/CD Pipeline",
+      "name": "CI/CD Pipeline 38",
+      "type": "Asset"
+    },
+    {
+      "classification": "restricted",
+      "id": "asset:0039",
+      "kind": "Internal Service",
+      "name": "Internal Service 39",
+      "type": "Asset"
+    },
+    {
+      "classification": "confidential",
+      "id": "asset:0040",
+      "kind": "Identity Provider",
+      "name": "Identity Provider 40",
+      "type": "Asset"
+    }
+  ]
+}
