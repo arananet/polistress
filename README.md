@@ -92,10 +92,9 @@ shared workflow [evt-00412] ...
 ```
 
 Findings are exported as JSON and CSV (`runs/<run_id>/findings.csv`) for
-import into GRC tooling. An example findings register produced by the full
-pipeline over the synthetic org lives in [`examples/`](examples/) (regenerable
-without an API key — see [`examples/README.md`](examples/README.md) for its
-provenance).
+import into GRC tooling. To produce an example findings register with the full
+pipeline (real API calls, small scope), run
+`python examples/generate_example.py` — see [`examples/README.md`](examples/README.md).
 
 ## Agents & models
 

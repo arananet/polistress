@@ -11,6 +11,9 @@ updated_at: "2026-07-04"
 # Implemented: worldgraph, personas, simulation, and report packages under
 # src/polistress, with the typer CLI, synthetic-org generator, pytest suite,
 # and an example findings register in examples/.
+# Update: all runtime and example paths make real Anthropic API calls
+# (ANTHROPIC_API_KEY or ANTHROPIC_AUTH_TOKEN); the offline example decider
+# was removed.
 
 roles:
   implementer: "@arananet"
